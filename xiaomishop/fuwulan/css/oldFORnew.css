@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+.nav-bar {
+	margin-top: 15px;
+	color: #616161;
+	height: 50px;
+	background-color: #f5f5f5;
+}
+
+.nav-bar .title {
+	float: left;
+	margin: 10px 0 0 0;
+}
+
+.nav-bar .title h2 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #424242;
+}
+.nav-bar .nav{
+	margin: 10px 0 0 0;
+	float: right;
+}
+.nav-bar .nav ul{
+	margin-right: 120px;
+    line-height: 30px;
+	height: 30px;
+}
+    
+.nav-bar .nav ul li{
+	float: left;
+	padding:0 10px;
+	border-right: 1px solid #E0E0E0;
+	box-sizing: border-box;
+}
+.nav-bar .nav ul li:last-child{
+	border-right: 0;
+}
+.nav-bar .nav ul li a{
+	font-size: 14px;
+}
+.nav-bar .nav ul li:first-child>a{
+	color: #ff6700;
+    cursor: default;
+}
+
+.nav-bar .nav button{
+	width: 118px;
+	height: 28px;
+	vertical-align: bottom;
+	float: right;
+	background: #ff6700;
+	border-color: #ff6700;
+	color: #fff;
+	cursor: pointer;
+	line-height: 28px;
+	border: 1px solid #b0b0b0;
+}
+
+.app-body {
+	/* width: 1352px;
+	height: 8237px; */
+}
+.app-body>.f1{
+	height: 530px;
+	background: url(../img/oldFORnew/01.png) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.f2{
+	height: 762px;
+	background: url(../img/oldFORnew/02.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f3{
+	height: 339px;
+	background: url(../img/oldFORnew/03.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f4{
+	height: 483px;
+	background: url(../img/oldFORnew/04.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f5{
+	height: 344px;
+	background: url(../img/oldFORnew/05.png) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.f6{
+	height: 685px;
+	background: url(../img/oldFORnew/06.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f7{
+	height: 506px;
+	background: url(../img/oldFORnew/07.jpg) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.f8{
+	height: 954px;
+	background: url(../img/oldFORnew/08.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f9{
+	height: 508px;
+	background: url(../img/oldFORnew/09.jpg) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.f10{
+	height: 553px;
+	background: url(../img/oldFORnew/10.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f11{
+	height: 859px;
+	background: url(../img/oldFORnew/11.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f12{
+	height: 860px;
+	background: url(../img/oldFORnew/12.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f13{
+	height: 289px;
+	background: url(../img/oldFORnew/13.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f14{
+	height: 323px;
+	background: url(../img/oldFORnew/14.jpg) no-repeat center center;
+	background-size: cover;
+}
+.app-body>.f15{
+	height: 242px;
+	background: url(../img/oldFORnew/15.jpg) no-repeat center center;
+	background-size: cover;
+}

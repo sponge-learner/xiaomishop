@@ -1,0 +1,302 @@
+@charset "utf-8";
+.nav-bar {
+	margin-top: 15px;
+	color: #616161;
+	height: 50px;
+	background-color: #f5f5f5;
+}
+
+.nav-bar .title {
+	float: left;
+	margin: 10px 0 0 0;
+}
+
+.nav-bar .title h2 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #424242;
+}
+
+.nav-bar .nav {
+	margin: 10px 0 0 0;
+	float: right;
+}
+
+.nav-bar .nav ul {
+	margin-right: 120px;
+	line-height: 30px;
+	height: 30px;
+}
+
+.nav-bar .nav ul li {
+	float: left;
+	padding: 0 10px;
+	border-right: 1px solid #E0E0E0;
+	box-sizing: border-box;
+}
+
+.nav-bar .nav ul li:last-child {
+	border-right: 0;
+}
+
+.nav-bar .nav ul li a {
+	font-size: 14px;
+}
+
+.nav-bar .nav ul li:first-child>a {
+	color: #ff6700;
+	cursor: default;
+}
+
+.nav-bar .nav button {
+	width: 118px;
+	height: 28px;
+	vertical-align: bottom;
+	float: right;
+	background: #ff6700;
+	border-color: #ff6700;
+	color: #fff;
+	cursor: pointer;
+	line-height: 28px;
+	border: 1px solid #b0b0b0;
+}
+
+.mi10-wrapper {
+	width: 100%;
+	background: #ea875e;
+	border: 1px solid transparent;
+}
+.mi10 {
+	width: 80%;
+	margin: 10px auto;
+	background: #fff;
+}
+.mi10>* {
+	vertical-align: middle;
+}
+.mi10>.img {
+	width: 60%;
+	display: inline-block;
+}
+.mi10>.img>img {
+	width: 100%;
+}
+.mi10>.text {
+	display: inline-block;
+	padding-left: 50px;
+}
+.mi10>.text>* {
+	margin: 30px 0;
+}
+.mi10>.text>button {
+	background: #ea875e;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+/*红米xinpin*/
+.Redmi-wrapper {
+	width: 100%;
+	background: #ea875e;
+	
+	border: 1px solid transparent;
+}
+.Redmi {
+	width: 80%;
+	margin: 10px auto;
+	background: #fff;
+}
+.Redmi>* {
+	vertical-align: middle;
+}
+.Redmi>.img {
+	width: 60%;
+	display: inline-block;
+}
+.Redmi>.img>img {
+	width: 100%;
+}
+.Redmi>.text {
+	display: inline-block;
+	padding-left: 50px;
+}
+.Redmi>.text>* {
+	margin: 30px 0;
+}
+.Redmi>.text>button {
+	background: #ea875e;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+/* 红米二等分 */
+.red-mi>.text-wrapper>.text-right>button {
+	background: #ea875e;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+.red-mi-wrapper {
+	width: 100%;
+	background: #ea875e;
+	text-align: center;
+	padding: 30px 0;
+}
+.red-mi-wrapper>.red-mi {
+	display: inline-block;
+	width: 45%;
+	background: #fff;
+}
+.red-mi-wrapper>.red-mi>img {width: 100%;}
+.red-mi-wrapper>.red-mi>.text-wrapper {
+	padding: 20px 0;
+}
+.red-mi-wrapper>.red-mi>.text-wrapper>* {
+	display: inline-block;
+	width: 45%;
+}
+.red-mi-wrapper>.red-mi>.text-wrapper>.text-left {
+	text-align: left;
+}
+.red-mi-wrapper>.red-mi>.text-wrapper>.text-right {
+	text-align: right;
+}
+
+/* 红米8二等分 */
+.hong8-mi>.text-wrapper>.text-right>button {
+	background: #ea875e;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+.hong8-mi-wrapper {
+	width: 100%;
+	background: #ea875e;
+	
+	text-align: center;
+	padding: 30px 0;
+}
+.hong8-mi-wrapper>.hong8-mi {
+	display: inline-block;
+	width: 45%;
+	background: #fff;
+}
+.hong8-mi-wrapper>.hong8-mi>img {width: 100%;}
+.hong8-mi-wrapper>.hong8-mi>.text-wrapper {
+	padding: 20px 0;
+}
+.hong8-mi-wrapper>.hong8-mi>.text-wrapper>* {
+	display: inline-block;
+	width: 45%;
+}
+.hong8-mi-wrapper>.hong8-mi>.text-wrapper>.text-left {
+	text-align: left;
+}
+.hong8-mi-wrapper>.hong8-mi>.text-wrapper>.text-right {
+	text-align: right;
+}
+
+/* 黑鲨二等分 */
+.heisha-mi>.text-wrapper>.text-right>button {
+	background: #ea875e;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+.heisha-mi-wrapper {
+	width: 100%;
+	background: #ea875e;
+	
+	text-align: center;
+	padding: 30px 0;
+}
+.heisha-mi-wrapper>.heisha-mi {
+	display: inline-block;
+	width: 45%;
+	background: #fff;
+}
+.heisha-mi-wrapper>.heisha-mi>img {width: 100%;}
+.heisha-mi-wrapper>.heisha-mi>.text-wrapper {
+	padding: 20px 0;
+}
+.heisha-mi-wrapper>.heisha-mi>.text-wrapper>* {
+	display: inline-block;
+	width: 45%;
+}
+.heisha-mi-wrapper>.heisha-mi>.text-wrapper>.text-left {
+	text-align: left;
+}
+.heisha-mi-wrapper>.heisha-mi>.text-wrapper>.text-right {
+	text-align: right;
+}
+
+/* Note二等分 */
+.Note-mi>.text-wrapper>.text-right>button {
+	background: #ea875e;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+.Note-mi-wrapper {
+	width: 100%;
+	background: #ea875e;
+	
+	text-align: center;
+	padding: 30px 0;
+}
+.Note-mi-wrapper>.Note-mi {
+	display: inline-block;
+	width: 45%;
+	background: #fff;
+}
+.Note-mi-wrapper>.Note-mi>img {width: 100%;}
+.Note-mi-wrapper>.Note-mi>.text-wrapper {
+	padding: 20px 0;
+}
+.Note-mi-wrapper>.Note-mi>.text-wrapper>* {
+	display: inline-block;
+	width: 45%;
+}
+.Note-mi-wrapper>.Note-mi>.text-wrapper>.text-left {
+	text-align: left;
+}
+.Note-mi-wrapper>.Note-mi>.text-wrapper>.text-right {
+	text-align: right;
+}
+
+
+
+
+
+.app-body>.tu1 {
+	height: 800px;
+	width: 100%;
+	background: url(../img/shangpin/01.jpg) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.tu2 {
+	height: 200px;
+	width: 100%;
+	background: url(../img/shangpin/02.jpg) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.tu3 {
+	height: 200px;
+	width: 100%;
+	background: url(../img/shangpin/05.jpg) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+.app-body>.tu4 {
+	height: 200px;
+	width: 100%;
+	background: url(../img/shangpin/08.jpg) no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+button:hover{
+	cursor: pointer;
+}

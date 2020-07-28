@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* 一楼 */
+.floor1 {
+	width: 100%;
+	height: 460px;
+	background: url(../img/Qiye/ban_01.jpg) no-repeat center center;
+	position: relative;
+}
+
+.floor1>.lft {
+	width: 296px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+}
+
+.floor1>.lft>.top {
+	height: 127px;
+	background: rgba(23, 18, 21, 0.66);
+}
+
+.floor1>.lft>.top>.face{
+	float: left;
+	width: 48px;
+	height: 48px;
+	padding: 2px;
+	margin: 36px 11px 0 46px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+.floor1>.lft>.top>.profile{
+	float: left;
+	margin: 46px 0 0 0px;
+	text-align: left;
+}
+.floor1>.lft>.top>.profile>div:first-child{
+	text-overflow: ellipsis;
+	font-size: 16px;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	width: 170px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.floor1>.lft>.top>.profile a{
+	font-size: 12px;
+    color: rgba(255,255,255,0.77);
+}
+    
+.floor1>.lft>.bom {
+	height: 305px;
+	padding-top: 28px;
+	background: rgba(23, 18, 21, 0.86);
+}
+
+.floor1>.lft>.bom h2 {
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+
+.floor1>.lft>.bom ul {
+	height: auto;
+	margin: 20px 0 0 60px;
+	list-style: none;
+}
+
+.floor1>.lft>.bom ul li {
+	margin-bottom: 15px;
+}
+
+.floor1>.lft>.bom ul li .img {
+	float: left;
+	display: block;
+	width: 23px;
+	height: 25px;
+	margin-top: 2px;
+}
+
+/* 四个图片 */
+.floor1>.lft>.bom ul li .img1 {
+	background: url(../img/Qiye/tequan_01.png) no-repeat center center;
+	background-size: cover;
+}
+
+.floor1>.lft>.bom ul li .img2 {
+	background: url(../img/Qiye/tequan_02.png) no-repeat center center;
+	background-size: cover;
+}
+
+.floor1>.lft>.bom ul li .img3 {
+	background: url(../img/Qiye/tequan_03.png) no-repeat center center;
+	background-size: cover;
+}
+
+.floor1>.lft>.bom ul li .img4 {
+	background: url(../img/Qiye/tequan_04.png) no-repeat center center;
+	background-size: cover;
+}
+
+.floor1>.lft>.bom ul li .text {
+	width: 120px;
+	margin-left: 38px;
+	text-align: left;
+}
+
+.floor1>.lft>.bom ul li .text>.tit {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.floor1>.lft>.bom ul li .text>.info {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.floor1>.lft>.bom>div {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.floor1>.lft>.bom>div>a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.floor2 {
+	height: 170px;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+.floor2 .item {
+	height: 100%;
+	margin-right: 15px;
+	float: left;
+}
+
+.floor2 .item:last-child {
+	margin-right: 0;
+}
+/* 三楼 新品 */
+.floor3{
+	height: 490px !important;
+}
+.floor3 .title{
+	margin-top: 50px;
+}
+
+/* 公共 */
+.public {
+	height: 440px;
+	background: #f5f5f5;
+}
+
+.public .title {
+	height: 58px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.public .title>.txt {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+	color: #333;
+}
+
+.public .title>.more {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.public .title>.more>a {
+	font-size: 16px;
+	line-height: 58px;
+	color: #424242;
+}
+
+.public .title>.more>a:hover {
+	color: #FF6700;
+}
+
+/* 内容 */
+.public .content {
+	height: 353px;
+}
+
+.public .content ul {
+	height: 100%;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.public .content ul li {
+	float: left;
+	height: 300px;
+	padding-top: 30px;
+	padding-left: 17px;
+	padding-right: 17px;
+	text-align: center;
+	background: #fff;
+	margin-bottom: 14px;
+	overflow: hidden;
+	/* _zoom: 1; */
+	margin-right: 14px;
+	position: relative;
+}
+.public .content ul li:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.public .content ul li:last-child {
+	margin-right: 0;
+}
+
+.public .content ul li>div:first-child {
+	width: 200px;
+	overflow: hidden;
+}
+
+.public .content ul li>div:nth-child(2) {
+	color: #212121;
+	font-size: 14px;
+	height: 18px;
+	width: 200px;
+	/* 隐藏部分以...形式出现 */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.public .content ul li>div:nth-child(3) {
+	font-size: 12px;
+	color: #b0b0b0;
+	margin-top: 5px;
+	width: 200px;
+	/* 隐藏部分以...形式出现 */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.denglu {
+	display: inline-block;
+	height: 38px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 38px;
+	background: #ff6700;
+	position: absolute;
+	left: 0;
+	bottom: -38px;
+	cursor: pointer;
+	text-align: center;
+	color: #FFFFFF;
+}
+.denglu>a{
+	
+	display: inline-block;
+}
+
+.floor11{
+	background: #f5f5f5;
+	height: 515px;
+	width: 100%;
+}
+.floor11>.container{
+	height: 360px;
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.floor11 h2{
+	font-size: 35px;
+	font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    color: #424242;
+}
+.floor11 p{
+	font-size: 14px;
+	color: #424242;
+	margin: 1em 0;
+}
+.floor11 .step{
+	width: 758px;
+	height: 104px;
+	background: url(../img/Qiye/liucheng.jpg) no-repeat center center;
+	background-size: cover;
+	margin-top: 56px;
+	margin-left: 240px;
+}
+.floor11 .vip{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+.floor11 .vip a{
+	font-size: 20px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城-小米视频</title>
+		<link rel="stylesheet" type="text/css" href="css/video.css" />
+		<script src="../js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<script type="text/javascript">
+			$(function() {
+				$(".head").load("../tou.html");
+				$(".fot").load("../fot.html");
+				// div 划过的动画
+				$(".mid>div>div:nth-child(3)>div").hover(function() {
+					$(this).children(".anniu").css("background", "rgba(255,165,0,0.7)");
+				}, function() {
+					$(this).find(".anniu").css("background", "none");
+				});
+				//中间的伪弹窗
+				$(".mid>div>div:nth-child(3)>div").click(function() {
+					var $height = $("video").height() / 2;
+					var $width = $("video").width() / 2;
+					var $top = $(window).height() / 2 - $height - 50;
+					var $lef = $(window).width() / 2 - $width;
+					console.log($height, $top);
+					$(".tanchu").css("display", "block");
+					$(".tanchu>video").css("top", $top + "px");
+					$(".tanchu>video").css("left", $lef + "px");
+				});
+				//点击tanchuang 任何地方关闭tanchuang
+				$(".tanchu").click(function() {
+					$(this).css("display", "none");
+
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="tanchu">
+			<video width="600px" height="400px" controls loop="loop" autoplay="autoplay">
+				<button type="button">关闭</button>
+				<source src="img/xiaomiTv.mp4" type="video/mp4" width="900px" height="600px">
+				<source src="movie.ogg" type="video/ogg">
+			</video>
+		</div>
+		<div class="head">
+		</div>
+		<div class="mid">
+			<div>
+				<div><a href="">首页</a>/<a href="">视频</a></div>
+				<div>
+					<h1>全部视频</h1>
+				</div>
+				<div>
+					<div><img src="img/video_1.jpg" width="615px" height="360px">
+						<div class="anniu">
+							详情
+						</div>
+						<h1>小米10 青春版发布会</h1>
+					</div>
+					<div class="fr"><img src="img/video_2.jpg" width="615px" height="360px">
+						<h1>小米10 8K手机拍大片</h1>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div><img src="img/video_3.jpg" width="615px" height="360px">
+						<h1>小米10发布会</h1>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div class="fr"><img src="img/video_4.jpg" width="615px" height="360px">
+						<h1>小米MIX Alpha开箱视频</h1>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div><img src="img/video_5.jpg" width="615px" height="360px">
+						<h1>小米5G新品手机发布会</h1>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div class="fr"><img src="img/video_6.jpg" width="615px" height="360px">
+						<h1>Redmi Note8 系列发布会</h1>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div><img src="img/video_7.jpg" width="615px" height="360px">
+						<h1>小米电视5 创新背后的故事</h1>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div class="fr"><img src="img/video_8.jpg" width="615px" height="360px">
+						<h1>小米CC9</h1>
+						<span>深蓝星球</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div><img src="img/video_9.jpg" width="615px" height="360px">
+						<h1>Redmi Note7 系列</h1>
+						<span>镜花水月</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div class="fr"><img src="img/video_10.jpg" width="615px" height="360px">
+						<h1>黑纱游戏手机2Pro</h1>
+						<span>指尖主题发布会</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div><img src="img/video_11.jpg" width="615px" height="360px">
+						<h1>小米手环4</h1>
+						<span>改变从今开始</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div class="fr"><img src="img/video_12.jpg" width="615px" height="360px">
+						<h1>王源&小米9 全新广告大片</h1>
+						<span>好看又能打！我反正被帅到了，Will You？</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div><img src="img/video_13.jpg" width="615px" height="360px">
+						<h1>雷军对话王源</h1>
+						<span>聊了3小时，这9个秘密决定公开</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+					<div class="fr"><img src="img/video_14.jpg" width="615px" height="360px">
+						<h1>小米MIX3磁动力滑盖全面屏</h1>
+						<span>全新滑盖交互体验，不一样的新感觉</span>
+						<div class="anniu">
+							详情
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fot">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,733 @@
+@charset "utf-8";
+
+.menu {
+	height: 675px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/* 列表菜单 */
+.menu .liebiao {
+	height: 460px;
+	position: relative;
+}
+
+.menu .liebiao .caidan {
+	height: 100%;
+	width: 230px;
+	background-color: #899fa3;
+}
+
+.menu .liebiao .caidan ul {
+	height: 420px;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.menu .liebiao .caidan ul li a{
+	height: 41px;
+	font-size: 15px;
+	color: #FFFFFF;
+	line-height: 41px;
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.menu .liebiao .caidan ul li a span {
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.menu .liebiao .caidan ul li:hover {
+	background-color: orangered;
+	cursor: pointer;
+}
+/* 类型 */
+.menu .leixing {
+	position: absolute;
+	left: 230px;
+	z-index: 100;
+	background-color: rgba(255,255,255,0.9);
+	height: 460px;
+	width: calc(100% - 230px);
+	 display: none; 
+}
+.menu .leixing.xianshi{
+	display: block;
+
+}
+.menu .leixing ul{
+	height: 50px;
+	width: 100%;
+	margin-top: 25px;
+	
+}
+.menu .leixing ul li{
+	width: calc(100% / 4);
+	color: #000000;
+	font-size: 15px;
+	float: left;
+	
+}
+.menu .leixing ul li:hover{
+	color: orange;
+	cursor: pointer;
+}
+.menu .leixing ul li .logo{
+	height: 40px;
+	width: 40px;
+	margin-left: 20px;
+}
+.menu .leixing ul li span{
+	width: 130px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.menu .leixing ul li .logo img{
+	width: 100%;
+	height: 100%;
+}
+/* 轮播图 */
+.menu .tupian {
+	height: 460px;
+	width: calc(100% - 230px);
+	/* display: none; */
+}
+ .swiper-container {
+	width: 100%;
+	height: 460px;
+	cursor: pointer;
+}
+
+.swiper-container .slider1 {
+	height: 100%;
+	background: url(../img/2aea5a05baa8d8ef9eaaf76fb854ac2a.webp);
+	background-size: cover;
+}
+
+.swiper-container .slider2 {
+	height: 100%;
+	background: url(../img/89dd7d7d1eaff171a115ae6733c4fcbe.jpg);
+	background-size: cover;
+}
+
+.swiper-container .slider3 {
+	height: 100%;
+	background: url(../img/7e882fcbdcafc352dde03c741836399b.webp);
+	background-size: cover;
+}
+
+.swiper-container .slider4 {
+	height: 100%;
+	background: url(../img/e52c3e98602b90f198ec316dce253cba.webp);
+	background-size: cover;
+}
+
+.swiper-container .slider5 {
+	height: 100%;
+	background: url(../img/zhuye_WPS图片.bmp);
+	background-size: cover;
+} 
+.menu .picture .tupian  img {
+	height: 100%;
+	width: 100%;
+
+}
+
+/* 功能区 */
+.menu .picture {
+	height: 200px;
+	width: 100%;
+	margin-top: 15px;
+}
+
+/* 六个选项 */
+.menu .picture .domain {
+	height: 100%;
+	width: 230px;
+	background-color: #333333;
+}
+
+.menu .picture .domain ul {
+	height: 100px;
+	width: 100%;
+}
+
+.menu .picture .domain ul li {
+	height: 100%;
+	width: calc((100% - 0.6px) / 3);
+	float: left;
+	border-right: 0.1px solid #000000;
+	cursor: pointer;
+}
+
+.menu .picture .domain ul li:last-child {
+	border-right: 0px;
+}
+
+.menu .picture .domain ul:last-child {
+	border-top: 0.1px solid #000000;
+}
+
+.menu .picture .domain ul li .tubiao {
+	height: 35px;
+	width: 35px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.menu .picture .domain ul li .tubiao img {
+	height: 100%;
+	width: 100%;
+}
+
+.menu .picture .domain ul li span {
+	display: block;
+	margin-left: 15px;
+	margin-top: 8px;
+}
+
+.menu .picture .domain ul:last-child li:first-child span {
+	display: block;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+
+/* 三张图片 */
+.menu .picture .tupian {
+	height: 100%;
+	width: calc(100% - 15px - 230px);
+	margin-left: 15px;
+}
+
+.menu .picture .tupian>div {
+	height: 100%;
+	width: calc((100% - 20px) / 3);
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.menu .picture .tupian>div:last-child {
+	margin-right: 0px;
+}
+
+/* 内容区 */
+.centre {
+	height: 5960px;
+	width: 100%;
+	background-color: #f5f5f5;
+	margin-top: 25px;
+}
+
+.centre .tupian {
+	margin-top: 50px;
+}
+
+.centre .tupian img {
+	height: 100%;
+	width: 100%;
+}
+
+/* 手机 */
+.centre .shouji {
+	height: 700px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.centre .shouji .biaoti {
+	height: 50px;
+	width: 100%;
+	font-size: 22px;
+	color: #000000;
+	line-height: 50px;
+}
+
+.centre .shouji .biaoti span {
+	float: right;
+	font-size: 17px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.centre .shouji .biaoti span:first-child {
+	height: 20px;
+	width: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 10px 10px;
+	margin-top: 15px;
+	margin-right: 0px;
+	background-color: #E6E6E6;
+}
+
+.centre .shouji .biaoti span:last-child:hover {
+	color: darkorange;
+
+}
+
+.centre .shouji .biaoti span:first-child:hover {
+	color: #FFFFFF;
+	background-color: darkorange;
+}
+
+.centre .shouji .lft {
+	height: 660px;
+	width: 230px;
+}
+
+.centre .shouji .lft img {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+.centre .shouji .rgt {
+	height: 660px;
+	width: calc(100% - 15px - 230px);
+	margin-left: 15px;
+}
+
+.centre .shouji .rgt ul {
+	height: 320px;
+	width: 100%;
+}
+
+.centre .shouji .rgt ul li {
+	display: inline-block;
+	height: 100%;
+	width: calc((100% - 45px) / 4);
+	float: left;
+	margin-right: 15px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.centre .shouji .rgt ul li img {
+	width: 100%;
+}
+
+.centre .shouji .rgt ul li:last-child {
+	margin-right: 0;
+}
+
+.centre .shouji .rgt ul li span {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.centre .shouji .rgt ul li span:last-child {
+	margin-top: 10px;
+	color: orange;
+	font-size: 15px;
+}
+
+.centre .shouji .rgt ul:last-child {
+	margin-top: 20px;
+}
+
+/* 家电 */
+.centre .jiadian,
+.centre .zhineng,
+.centre .dapei,
+.centre .peijian,
+.centre .zhoubian {
+	width: 100%;
+	height: 710px;
+	margin-top: 15px;
+}
+
+.centre .jiadian .top,
+.centre .jiadian .bot,
+.centre .zhineng .top,
+.centre .zhineng .bot,
+.centre .zhineng .cnt,
+.centre .dapei .top,
+.centre .dapei .bot,
+.centre .peijian .top,
+.centre .peijian .bot,
+.centre .peijian .cnt,
+.centre .zhoubian .top,
+.centre .zhoubian .bot {
+	display: none;
+}
+
+.centre .jiadian .top.sele,
+.centre .jiadian .bot.sele,
+.centre .zhineng .top.sele,
+.centre .zhineng .bot.sele,
+.centre .zhineng .cnt.sele,
+.centre .dapei .top.sele,
+.centre .dapei .bot.sele,
+.centre .peijian .top.sele,
+.centre .peijian .bot.sele,
+.centre .peijian .cnt.sele,
+.centre .zhoubian .top.sele,
+.centre .zhoubian .bot.sele {
+	display: block;
+}
+
+
+.centre .jiadian .biaoti,
+.centre .zhineng .biaoti,
+.centre .dapei .biaoti,
+.centre .peijian .biaoti,
+.centre .zhoubian .biaoti {
+	height: 50px;
+	width: 100%;
+	font-size: 22px;
+	color: #000000;
+	line-height: 50px;
+}
+
+.centre .jiadian .biaoti span,
+.centre .zhineng .biaoti span,
+.centre .dapei .biaoti span,
+.centre .peijian .biaoti span,
+.centre .zhoubian .biaoti span {
+	float: right;
+	font-size: 17px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.centre .jiadian .biaoti span:hover,
+.centre .zhineng .biaoti span:hover,
+.centre .dapei .biaoti span:hover,
+.centre .peijian .biaoti span:hover,
+.centre .zhoubian .biaoti span:hover {
+	color: orangered;
+	text-decoration: underline;
+}
+
+.centre .jiadian .neirong,
+.centre .zhineng .neirong,
+.centre .dapei .neirong,
+.centre .peijian .neirong,
+.centre .zhoubian .neirong {
+	width: 100%;
+	height: 645px;
+	margin-top: 15px;
+}
+
+.centre .jiadian .neirong .top,
+.centre .jiadian .neirong .bot,
+.centre .zhineng .neirong .top,
+.centre .zhineng .neirong .bot,
+.centre .zhineng .neirong .cnt,
+.centre .dapei .neirong .top,
+.centre .dapei .neirong .bot,
+.centre .peijian .neirong .top,
+.centre .peijian .neirong .bot,
+.centre .peijian .neirong .cnt,
+.centre .zhoubian .neirong .top,
+.centre .zhoubian .neirong .bot {
+	height: 312.5px;
+}
+
+.centre .jiadian .neirong ul,
+.centre .zhineng .neirong ul,
+.centre .dapei .neirong ul,
+.centre .peijian .neirong ul,
+.centre .zhoubian .neirong ul {
+	height: calc((100% - 20px) / 2);
+	width: 100%;
+}
+
+.centre .jiadian .neirong ul:last-child,
+.centre .zhineng .neirong ul:last-child,
+.centre .dapei .neirong ul:last-child,
+.centre .peijian .neirong ul:last-child,
+.centre .zhoubian .neirong ul:last-child {
+	margin-top: 20px;
+}
+
+.centre .jiadian .neirong ul li,
+.centre .zhineng .neirong ul li,
+.centre .dapei .neirong ul li,
+.centre .peijian .neirong ul li,
+.centre .zhoubian .neirong ul li {
+	height: 100%;
+	width: calc((100% - 60px) / 5);
+	float: left;
+	margin-right: 15px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.centre .jiadian .neirong ul li:first-child img,
+.centre .zhineng .neirong ul li:first-child img,
+.centre .dapei .neirong ul li:first-child img,
+.centre .peijian .neirong ul li:first-child img,
+.centre .zhoubian .neirong ul li:first-child img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.centre .jiadian .neirong ul li img,
+.centre .zhineng .neirong ul li img,
+.centre .dapei .neirong ul li img,
+.centre .peijian .neirong ul li img,
+.centre .zhoubian .neirong ul li img {
+	height: 233.2px;
+	width: 233.2px;
+
+}
+
+.centre .jiadian .neirong .top li:first-child img,
+.centre .jiadian .neirong .bot li:first-child img,
+.centre .zhineng .neirong .top li:first-child img,
+.centre .zhineng .neirong .bot li:first-child img,
+.centre .zhineng .neirong .cnt li:first-child img,
+.centre .dapei .neirong .top li:first-child img,
+.centre .dapei .neirong .bot li:first-child img,
+.centre .peijian .neirong .top li:first-child img,
+.centre .peijian .neirong .bot li:first-child img,
+.centre .peijian .neirong .cnt li:first-child img,
+.centre .zhoubian .neirong .top li:first-child img,
+.centre .zhoubian .neirong .bot li:first-child img {
+	height: 233.2px;
+	width: 233.2px;
+}
+
+.centre .jiadian .neirong ul li:last-child,
+.centre .zhineng .neirong ul li:last-child,
+.centre .dapei .neirong ul li:last-child,
+.centre .peijian .neirong ul li:last-child,
+.centre .zhoubian .neirong ul li:last-child {
+	margin-right: 0;
+}
+
+.centre .jiadian .neirong ul li span,
+.centre .zhineng .neirong ul li span,
+.centre .dapei .neirong ul li span,
+.centre .peijian .neirong ul li span,
+.centre .zhoubian .neirong ul li span {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.centre .jiadian .neirong ul li span:last-child,
+.centre .zhineng .neirong ul li span:last-child,
+.centre .dapei .neirong ul li span:last-child,
+.centre .peijian .neirong ul li span:last-child,
+.centre .zhoubian .neirong ul li span:last-child {
+	margin-top: 10px;
+	color: orange;
+	font-size: 15px;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child,
+.centre .zhineng .neirong ul:last-child li:last-child,
+.centre .dapei .neirong ul:last-child li:last-child,
+.centre .peijian .neirong ul:last-child li:last-child,
+.centre .zhoubian .neirong ul:last-child li:last-child {
+	background-color: #f5f5f5;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl,
+.centre .zhineng .neirong ul:last-child li:last-child dl,
+.centre .dapei .neirong ul:last-child li:last-child dl,
+.centre .peijian .neirong ul:last-child li:last-child dl,
+.centre .zhoubian .neirong ul:last-child li:last-child dl {
+	height: 150px;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl:last-child,
+.centre .zhineng .neirong ul:last-child li:last-child dl:last-child,
+.centre .dapei .neirong ul:last-child li:last-child dl:last-child,
+.centre .peijian .neirong ul:last-child li:last-child dl:last-child,
+.centre .zhoubian .neirong ul:last-child li:last-child dl:last-child {
+	margin-top: 12.5px;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl dt,
+.centre .zhineng .neirong ul:last-child li:last-child dl dt,
+.centre .dapei .neirong ul:last-child li:last-child dl dt,
+.centre .peijian .neirong ul:last-child li:last-child dl dt,
+.centre .zhoubian .neirong ul:last-child li:last-child dl dt {
+	height: 100%;
+	width: 50%;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl:first-child dt span,
+.centre .zhineng .neirong ul:last-child li:last-child dl:first-child dt span,
+.centre .dapei .neirong ul:last-child li:last-child dl:first-child dt span,
+.centre .peijian .neirong ul:last-child li:last-child dl:first-child dt span,
+.centre .zhoubian .neirong ul:last-child li:last-child dl:first-child dt span {
+	margin-top: 40px;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl:first-child dt span:last-child,
+.centre .zhineng .neirong ul:last-child li:last-child dl:first-child dt span:last-child,
+.centre .dapei .neirong ul:last-child li:last-child dl:first-child dt span:last-child,
+.centre .peijian .neirong ul:last-child li:last-child dl:first-child dt span:last-child,
+.centre .zhoubian .neirong ul:last-child li:last-child dl:first-child dt span:last-child {
+	margin-top: 10px;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl:last-child dt span,
+.centre .zhineng .neirong ul:last-child li:last-child dl:last-child dt span,
+.centre .dapei .neirong ul:last-child li:last-child dl:last-child dt span,
+.centre .peijian .neirong ul:last-child li:last-child dl:last-child dt span,
+.centre .zhoubian .neirong ul:last-child li:last-child dl:last-child dt span {
+	margin-top: 40px;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl:last-child dt span:last-child,
+.centre .zhineng .neirong ul:last-child li:last-child dl:last-child dt span:last-child,
+.centre .dapei .neirong ul:last-child li:last-child dl:last-child dt span:last-child,
+.centre .peijian .neirong ul:last-child li:last-child dl:last-child dt span:last-child,
+.centre .zhoubian .neirong ul:last-child li:last-child dl:last-child dt span:last-child {
+	margin-top: 10px;
+	color: #898989;
+	font-size: 15px;
+
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl dt img,
+.centre .zhineng .neirong ul:last-child li:last-child dl dt img,
+.centre .dapei .neirong ul:last-child li:last-child dl dt img,
+.centre .peijian .neirong ul:last-child li:last-child dl dt img,
+.centre .zhoubian .neirong ul:last-child li:last-child dl dt img {
+	height: 70%;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.centre .jiadian .neirong ul:last-child li:last-child dl:last-child dt:last-child img,
+.centre .zhineng .neirong ul:last-child li:last-child dl:last-child dt:last-child img,
+.centre .dapei .neirong ul:last-child li:last-child dl:last-child dt:last-child img,
+.centre .peijian .neirong ul:last-child li:last-child dl:last-child dt:last-child img,
+.centre .zhoubian .neirong ul:last-child li:last-child dl:last-child dt:last-child img {
+	height: 70%;
+	width: 90%;
+}
+
+/* 视频 */
+.centre .shipin {
+	height: 350px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.centre .shipin .biaoti {
+	height: 50px;
+	width: 100%;
+	font-size: 22px;
+	color: #000000;
+	line-height: 50px;
+}
+
+.centre .shipin .biaoti span {
+	float: right;
+	font-size: 17px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.centre .shipin .biaoti span:first-child {
+	height: 20px;
+	width: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 10px 10px;
+	margin-top: 15px;
+	margin-right: 0px;
+	background-color: #E6E6E6;
+}
+
+.centre .shipin .biaoti span:last-child:hover {
+	color: darkorange;
+
+}
+
+.centre .shipin .biaoti span:first-child:hover {
+	color: #FFFFFF;
+	background-color: darkorange;
+}
+
+.centre .shipin ul {
+	height: 300px;
+	width: 100%;
+}
+
+.centre .shipin ul li {
+	height: 100%;
+	width: calc((100% - 60px) / 4);
+	float: left;
+	margin-right: 20px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.centre .shipin ul li img {
+	height: 200px;
+	width: 100%;
+}
+
+.centre .shipin ul li span {
+	display: block;
+	width: 100%;
+	color: #000000;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.centre .shipin ul li:last-child {
+	margin-right: 0;
+}
+
+/* 功能按钮 */
+.anniu {
+	height: 650px;
+	width: 70px;
+	position: fixed;
+	right: 0;
+	bottom: 30px;
+}
+
+.anniu ul {
+	height: 100%;
+	width: 100%;
+}
+
+.anniu ul li {
+	width: 100%;
+	height: 80px;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	cursor: pointer;
+}
+
+.anniu ul li img {
+	height: 40px;
+	width: 40px;
+	margin-left: 15px;
+	margin-top: 10px;
+
+}
+
+.anniu ul li span {
+	display: block;
+	color: #808080;
+	font-size: 15px;
+	text-align: center;
+}
+
+.anniu ul li:last-child {
+	margin-top: 30px;
+}

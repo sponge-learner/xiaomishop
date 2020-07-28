@@ -1,0 +1,552 @@
+@charset "utf-8";
+
+.biaoti {
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.zhanshi {
+	height: 1850px;
+	width: 100%;
+}
+
+.zhanshi .moxing {
+	margin-top: 30px;
+	height: 500px;
+	width: 600px;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 550px;
+	cursor: pointer;
+}
+
+.swiper-container .slider1 {
+	height: 100%;
+	background: url(../img/pms_1581493347.45562393.jpg);
+	background-size: cover;
+}
+
+.swiper-container .slider2 {
+	height: 100%;
+	background: url(../img/pms_1581493365.27036533.jpg);
+	background-size: cover;
+}
+
+.swiper-container .slider3 {
+	height: 100%;
+	background: url(../img/pms_1581493613.49827882.jpg);
+	background-size: cover;
+}
+
+.swiper-container .slider4 {
+	height: 100%;
+	background: url(../img/pms_1581493629.35094428.jpg);
+	background-size: cover;
+}
+
+.swiper-container .slider5 {
+	height: 100%;
+	background: url(../img/pms_1581493646.8747482.jpg);
+	background-size: cover;
+}
+
+.zhanshi .fukuan {
+	margin-top: 30px;
+	height: 2000px;
+	width: 50%;
+}
+
+.zhanshi .fukuan .title {
+	font-size: 25px;
+	color: #000000;
+}
+
+.zhanshi .fukuan .xiangqing {
+	font-size: 15px;
+	margin-top: 10px;
+	color: #B0B0B0;
+}
+
+.zhanshi .fukuan .xiangqing span {
+	font-size: 15px;
+	color: orange;
+}
+
+.zhanshi .fukuan .xiangqing span:nth-child(2) {
+	display: block;
+	margin-top: 20px;
+	color: orangered;
+}
+
+.zhanshi .fukuan .xiangqing span:last-child {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: orangered;
+	margin-top: 20px;
+}
+
+hr {
+	margin-top: 20px;
+}
+
+.zhanshi .fukuan .dizhi {
+	height: 110px;
+	width: 100%;
+	background-color: #F5F5F5;
+	margin-top: 25px;
+
+}
+
+.zhanshi .fukuan .dizhi .tubiao {
+	height: 30px;
+	width: 30px;
+	background-color: #000000;
+	margin-top: 35px;
+	margin-left: 10px;
+}
+
+.zhanshi .fukuan .dizhi span {
+	font-size: 15px;
+	color: #000000;
+	margin-left: 20px;
+}
+
+.zhanshi .fukuan .dizhi span:nth-child(3) a {
+	font-size: 15px;
+	color: orangered;
+	line-height: 80px;
+	cursor: pointer;
+}
+
+.zhanshi .fukuan .dizhi span:last-child {
+	display: block;
+	height: 24px;
+	width: 100%;
+	font-size: 15px;
+	color: orangered;
+	margin-left: 60px;
+	position: relative;
+	bottom: 30px;
+}
+/* 选择版本 */
+.zhanshi .fukuan .banben .biaoti,
+.zhanshi .fukuan .yanse .biaoti
+{
+	margin-top: 20px;
+	font-size: 23px;
+	color: #000000;
+}
+.zhanshi .fukuan .banben ul{
+	height: 140px;
+	margin-top: 20px;
+}
+.zhanshi .fukuan .banben ul li{
+	height: 50px;
+	width: 299px;
+	margin-right: 10px;
+	border: 1px solid #E6E6E6;
+	float: left;
+	
+}
+.zhanshi .fukuan .banben ul li a{
+	font-size: 15px;
+	color: #B0B0B0;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 50px;
+	cursor: pointer;
+}
+.zhanshi .fukuan .banben ul li a span{
+	color: #000000;
+	margin-right: 50px;
+	
+}
+.zhanshi .fukuan .banben ul li:nth-child(2){
+	margin-right: 0px;
+}
+.zhanshi .fukuan .banben ul li:last-child{
+	margin-top: 20px;
+}
+.zhanshi .fukuan .banben ul li a span:last-child{
+	display: block;
+	height: 30px;
+	width: 60px;
+	position: relative;
+	left: 170px;
+	bottom: 50px;
+}
+/* 颜色 */
+.zhanshi .fukuan .yanse ul{
+	height: 50px;
+	margin-top: 20px;
+}
+.zhanshi .fukuan .yanse ul li{
+	border:1px solid #E6E6E6 ;
+	height: 50px;
+	width: 299px;
+	margin-right: 10px;
+	border: 1px solid #E6E6E6;
+	float: left;
+}
+.zhanshi .fukuan .yanse ul li:last-child{
+	margin-right: 0px;
+}
+.zhanshi .fukuan .yanse ul li .jixing{
+	height: 20px;
+	width: 20px;
+	margin-top: 15px;
+	margin-left: 100px;
+}
+.zhanshi .fukuan .yanse ul li .jixing img{
+	height: 100%;
+	width: 100%;
+}
+.zhanshi .fukuan .yanse ul li a {
+	cursor: pointer;
+}
+.zhanshi .fukuan .yanse ul li a span{
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+	left: 145px;
+	bottom: 35px;
+}
+/* 意外保护 */
+.zhanshi .fukuan .baohu .biaoti,
+.zhanshi .fukuan .baoxiu .biaoti
+{
+	margin-top: 20px;
+	font-size: 23px;
+	color: #000000;
+}
+.zhanshi .fukuan .baohu .biaoti span a,
+.zhanshi .fukuan .baoxiu .biaoti span a
+{
+	font-size: 17px;
+	color: orangered;
+	cursor: pointer;
+	position: relative;
+	left: 236px;
+}
+.zhanshi .fukuan .baohu ul{
+	height: 344px;
+	margin-top: 20px;
+}
+.zhanshi .fukuan .baohu ul li{
+	height: 170px;
+	border: 1px solid #E6E6E6;
+}
+.zhanshi .fukuan .baohu ul li input{
+	margin-left: 40px;
+	margin-top: 80px;
+}
+.zhanshi .fukuan .baohu ul li .logo{
+	height: 60px;
+	width: 60px;
+	position: relative;
+	bottom: 50px;
+	left: 80px;
+	
+}
+.zhanshi .fukuan .baohu ul li .logo img{
+	height: 100%;
+	width: 100%;
+}
+.zhanshi .fukuan .baohu ul li span:nth-child(3){
+	font-size: 20px;
+	color: #000000;
+	position: relative;
+	left: 140px;
+	bottom: 180px;
+}
+.zhanshi .fukuan .baohu ul li #tiaokuan{
+	position: relative;
+	right: 233px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baohu ul li span:nth-child(4){
+	font-size: 15px;
+	color: #B0B0B0;
+	position: relative;
+	left: 15px;
+	bottom: 150px;
+}
+.zhanshi .fukuan .baohu ul li span:nth-child(6){
+	font-size: 14px;
+	color: #424242;
+	position: relative;
+	right: 220px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baohu ul li span:nth-child(7),
+.zhanshi .fukuan .baohu ul li span:nth-child(9)
+{
+	font-size: 14px;
+	color: orange;
+	position: relative;
+	right: 220px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baohu ul li span:nth-child(8){
+	color: #000000;
+	font-size: 15px;
+	position: relative;
+	right: 220px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baohu ul li .jiaqian{
+	height: 20px;
+	width: 50px;
+	font-size: 15px;
+	color: #B0B0B0;
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	bottom: 140px;
+}
+.zhanshi .fukuan .baohu ul li:last-child #tiaokuan,
+.zhanshi .fukuan .baohu ul li:last-child span:nth-child(6),
+.zhanshi .fukuan .baohu ul li:last-child span:nth-child(7),
+.zhanshi .fukuan .baohu ul li:last-child span:nth-child(8),
+.zhanshi .fukuan .baohu ul li:last-child span:nth-child(9){
+	position: relative;
+	right: 120px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baohu ul li:last-child .jiaqian{
+	position: relative;
+	bottom: 40px;
+}
+/* 保修 */
+.zhanshi .fukuan .baoxiu ul{
+	height: 170px;
+	margin-top: 20px;
+}
+.zhanshi .fukuan .baoxiu ul li{
+	height: 170px;
+	border: 1px solid #E6E6E6;
+}
+.zhanshi .fukuan .baoxiu ul li input{
+	margin-left: 40px;
+	margin-top: 80px;
+}
+.zhanshi .fukuan .baoxiu ul li .logo{
+	height: 60px;
+	width: 60px;
+	position: relative;
+	bottom: 50px;
+	left: 80px;
+	
+}
+.zhanshi .fukuan .baoxiu ul li .logo img{
+	height: 100%;
+	width: 100%;
+}
+.zhanshi .fukuan .baoxiu ul li span:nth-child(3){
+	font-size: 20px;
+	color: #000000;
+	position: relative;
+	left: 140px;
+	bottom: 180px;
+}
+.zhanshi .fukuan .baoxiu ul li #tiaokuan{
+	position: relative;
+	right: 227px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baoxiu ul li span:nth-child(4){
+	font-size: 15px;
+	color: #B0B0B0;
+	position: relative;
+	left: 15px;
+	bottom: 150px;
+}
+.zhanshi .fukuan .baoxiu ul li span:nth-child(6){
+	font-size: 14px;
+	color: #424242;
+	position: relative;
+	right: 220px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baoxiu ul li span:nth-child(7),
+.zhanshi .fukuan .baoxiu ul li span:nth-child(9)
+{
+	font-size: 14px;
+	color: orange;
+	position: relative;
+	right: 220px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baoxiu ul li span:nth-child(8){
+	color: #000000;
+	font-size: 15px;
+	position: relative;
+	right: 220px;
+	bottom: 120px;
+}
+.zhanshi .fukuan .baoxiu ul li .jiaqian{
+	height: 20px;
+	width: 50px;
+	font-size: 15px;
+	color: #B0B0B0;
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	bottom: 140px;
+}
+/* 结算 */
+.jiesuan{
+	height:190px;
+	margin-top: 30px;
+	background-color: #F5F5F5;
+}
+.jiesuan .jixing{
+	height: 30px;
+	font-size: 15px;
+	color: #424242;
+	padding-top: 25px;
+	margin-left: 40px;
+}
+.jiesuan .jixing span:last-child{
+	margin-left: 275px;
+}
+.jiesuan .baozhangfuwu{
+	height: 30px;
+	font-size: 15px;
+	color: #424242;
+	padding-top: 5px;
+	margin-left: 40px;
+}
+.jiesuan .baozhangfuwu span:last-child{
+	position: relative;
+	left: 400px;
+}
+.jiesuan .baoxiufuwu{
+	height: 30px;
+	font-size: 15px;
+	color: #424242;
+	padding-top: 5px;
+	margin-left: 40px;
+}
+.jiesuan .baoxiufuwu span:last-child{
+	position: relative;
+	left: 405px;
+}
+.jiesuan .zongji{
+	height: 30px;
+	font-size: 24px;
+	color: orangered;
+	padding-top: 5px;
+	margin-left: 40px;
+}
+.jiesuan .zongji span:last-child{
+	position: relative;
+	left: 15px;
+}
+/* 加入购物车 */
+.jiaru{
+	height: 60px;
+	margin-top: 25px;
+}
+.jiaru button{
+	height: 60px;
+	width: 350px;
+	background-color: orange;
+	font-size: 17px;
+	text-align: center;
+	line-height: 60px;
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+.jiaru .xh{
+	height: 60px;
+	width: 150px;
+	background-color: #898989;
+	font-size: 17px;
+	text-align: center;
+	line-height: 60px;
+	color: white;
+	border: 0;
+	margin-left: 10px;
+	cursor: pointer;
+}
+/* 价格说明 */
+.shuoming{
+	height: 300px;
+	width: 100%;
+	background-color: #F5F5F5;
+}
+.shuoming .jiage{
+	height: 50px;
+	font-size: 25px;
+	color: #000000;
+	position: relative;
+	bottom: 150px;
+	
+}
+.shuoming .neirong{
+	height: 150px;
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+.shuoming .neirong span:first-child{
+	color: #000000;
+}
+.shuoming .neirong span {
+	display: block;
+	width: 950px;
+	font-size: 17px;
+	color: #CCCCCC;
+	margin-left: 140px;
+	position: relative;
+	bottom: 80px;
+	
+}
+.anniu {
+	height: 650px;
+	width: 70px;
+	position: fixed;
+	right: 0;
+	bottom: 30px;
+}
+
+.anniu ul {
+	height: 100%;
+	width: 100%;
+}
+
+.anniu ul li {
+	width: 100%;
+	height: 80px;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	cursor: pointer;
+}
+
+.anniu ul li img {
+	height: 40px;
+	width: 40px;
+	margin-left: 15px;
+	margin-top: 10px;
+
+}
+
+.anniu ul li span {
+	display: block;
+	color: #808080;
+	font-size: 15px;
+	text-align: center;
+}
+
+.anniu ul li:last-child {
+	margin-top: 30px;
+}

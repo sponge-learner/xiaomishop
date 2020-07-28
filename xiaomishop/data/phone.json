@@ -1,0 +1,171 @@
+{
+	"shouji": [{
+			"name": "小米10",
+			"piace": "5499",
+			"jieshao": "xiaomi_1.png"
+		}, {
+			"name": "小米10pro",
+			"piace": "3499",
+			"jieshao": "xiaomi_2.png"
+		}, {
+			"name": "小米9cc",
+			"piace": "5499",
+			"jieshao": "xiaomi_3.png"
+		}, {
+			"name": "小米10青春",
+			"piace": "3499",
+			"jieshao": "xiaomi_4.png"
+		}, {
+			"name": "小米10e",
+			"piace": "5499",
+			"jieshao": "xiaomi_5.png"
+		}, {
+			"name": "小米9",
+			"piace": "3499",
+			"jieshao": "xiaomi_6.png"
+		}
+
+	],
+	"hongmi": [{
+			"name": "红米10",
+			"piace": "5499",
+			"jieshao": "<img src='../img/redmi_1.png' >"
+		}, {
+			"name": "红米10pro",
+			"piace": "3499",
+			"jieshao": "<img src='../img/redmi_2.png' >"
+		}, {
+			"name": "红米9cc",
+			"piace": "5499",
+			"jieshao": "<img src='../img/redmi_3.png' >"
+		}, {
+			"name": "红米10青春",
+			"piace": "3499",
+			"jieshao": "<img src='../img/redmi_4.png' >"
+		}, {
+			"name": "红米10e",
+			"piace": "5499",
+			"jieshao": "<img src='../img/redmi_2.png' >"
+		}, {
+			"name": "红米9",
+			"piace": "3499",
+			"jieshao": "<img src='../img/redmi_1.png' >"
+		}
+
+	],
+	"diannao": [{
+			"name": "电脑1",
+			"piace": "5499",
+			"jieshao": "<img src='../img/diannao1.png' >"
+		}, {
+			"name": "电脑2",
+			"piace": "3499",
+			"jieshao": "<img src='../img/diannao1.png' >"
+		}, {
+			"name": "电脑3",
+			"piace": "5499",
+			"jieshao": "<img src='../img/diannao1.png' >"
+		}, {
+			"name": "电脑4",
+			"piace": "3499",
+			"jieshao": "<img src='../img/diannao1.png' >"
+		}, {
+			"name": "电脑5",
+			"piace": "5499",
+			"jieshao": "<img src='../img/diannao1.png' >"
+		}, {
+			"name": "电脑6",
+			"piace": "3499",
+			"jieshao": "<img src='../img/diannao1.png' >"
+		}
+
+	],
+	"jiadian": [{
+			"name": "家电1",
+			"piace": "5499",
+			"jieshao": "<img src='../img/jiadian.png' >"
+		}, {
+			"name": "家电2",
+			"piace": "3499",
+			"jieshao": "<img src='../img/jiadian.png' >"
+		}, {
+			"name": "家电3",
+			"piace": "5499",
+			"jieshao": "<img src='../img/jiadian.png' >"
+		}, {
+			"name": "家电4",
+			"piace": "3499",
+			"jieshao": "<img src='../img/jiadian.png' >"
+		}, {
+			"name": "家电5",
+			"piace": "5499",
+			"jieshao": "<img src='../img/jiadian.png' >"
+		}, {
+			"name": "家电6",
+			"piace": "3499",
+			"jieshao": "<img src='../img/jiadian.png' >"
+		}
+
+	],
+	"luyouqi": [{
+			"name": "路由器1",
+			"piace": "5499",
+			"jieshao": "<img src='../img/luyouqi.png' >"
+		}, {
+			"name": "路由器2",
+			"piace": "3499",
+			"jieshao": "<img src='../img/luyouqi.png' >"
+		}, {
+			"name": "路由器3",
+			"piace": "5499",
+			"jieshao": "<img src='../img/luyouqi.png' >"
+		}, {
+			"name": "路由器4",
+			"piace": "3499",
+			"jieshao": "<img src='../img/luyouqi.png' >"
+		}, {
+			"name": "路由器5",
+			"piace": "5499",
+			"jieshao": "<img src='../img/luyouqi.png' >"
+		}, {
+			"name": "路由器6",
+			"piace": "3499",
+			"jieshao": "<img src='../img/luyouqi.png' >"
+		}
+
+	],
+	"yingjian": [{
+			"name": "硬件1",
+			"piace": "5499",
+			"jieshao": "<img src='../img/yingjian1.png' >"
+		}, {
+			"name": "硬件2",
+			"piace": "3499",
+			"jieshao": "<img src='../img/yingjian4.png' >"
+		}, {
+			"name": "硬件3",
+			"piace": "5499",
+			"jieshao": "<img src='../img/yingjian2.png' >"
+		}, {
+			"name": "硬件4",
+			"piace": "3499",
+			"jieshao": "<img src='../img/yingjian1.png' >"
+		}, {
+			"name": "硬件5",
+			"piace": "5499",
+			"jieshao": "<img src='../img/yingjian3.png' >"
+		}, {
+			"name": "硬件6",
+			"piace": "3499",
+			"jieshao": "<img src='../img/yingjian1.png' >"
+		}
+
+	],
+	"zhanghao": [{
+		"username": "xiaomi1",
+		"password": "123456.qwer"
+	}, {
+		"username": "xiaomi2",
+		"password": "123456.qwer"
+	}]
+}

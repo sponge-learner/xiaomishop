@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.breadcrumbs {
+	height: 40px;
+	font-size: 12px;
+	line-height: 40px;
+	background: #f5f5f5;
+	color: #616161;
+}
+
+.content>.item>.hd {
+	height: 60px;
+	padding-top: 14px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.content>.item>.hd .title {
+	font-size: 18px;
+	color: #ff6700;
+	font-weight: 400;
+	cursor: pointer;
+	margin: 0.83em 0;
+}
+
+.content>.item>.hd .title span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 18px;
+	border: 1px solid #b0b0b0;
+	border-radius: 15px;
+	color: #b0b0b0;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.content>.item>.bd ul li {
+	float: left;
+	width: 245px;
+	height: 161px;
+	padding-top: 24px;
+	border-right: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.content>.item>.bd ul li img {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 24px;
+}
+
+.content>.item>.bd ul li a {
+	font-size: 14px;
+}
+
+.content>.item>.bd ul li:nth-child(5),
+.content>.item>.bd ul li:nth-child(10),
+.content>.item>.bd ul li:nth-child(15),
+.content>.item>.bd ul li:nth-child(20) {
+	border-right: 0;
+}
+
+.content>.item>.bd {
+	display: block;
+}
+
+.content>.item:last-child {
+	margin-bottom: 50px;
+	/* border-bottom: 1px solid #e0e0e0; */
+}
+
+/* .content>.item:last-child */
+
+/* .content>.item>.bd{
+	height: 805px;
+} */
+.shouji>.bd,
+.dianshi>.bd,
+.jiadian>.bd {
+	height: 805px;
+}
+
+.bijiben>.bd,
+.chuxing>.bd,
+.zhineng>.bd,
+.dianyuan>.bd,
+.erji>.bd {
+	height: 483px;
+}
+
+.jiankang>.bd,
+.shenghuo>.bd {
+	height: 644px;
+}
