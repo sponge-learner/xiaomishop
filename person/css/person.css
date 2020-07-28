@@ -1,0 +1,349 @@
+.mid {
+	width: 100%;
+	height: 1100px;
+	background-color: #F5F5F5;
+}
+
+.mid>div {
+	width: 1226px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.mid>div>div:first-child {
+	height: 40px;
+	line-height: 40px;
+}
+
+.mid>div>div:nth-child(2) {
+	height: 1000px;
+	width: 250px;
+	background-color: #FFFFFF;
+}
+
+.mid>div>div:nth-child(3) {
+	width: 960px;
+	height: 600px;
+	background-color: #FFFFFF;
+}
+
+.mid>div>div:nth-child(2) ul:first-child {
+	margin-top: 15px;
+}
+
+.mid>div>div:nth-child(2) li:first-child {
+	padding: 17px 0;
+}
+
+.mid>div>div:nth-child(2) li:first-child>a {
+	font-size: 20px;
+	color: #000000;
+}
+
+.mid>div>div:nth-child(2) li {
+	text-indent: 50px;
+	height: 30px;
+	font-size: 15px;
+}
+
+.ifo {
+	width: 860px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.ifo>div:first-child {
+	width: 100%;
+	height: 220px;
+	border-bottom: 1px #e6e6e6 solid;
+	padding-top: 55px;
+}
+
+.ifo>div:first-child>div:first-child {
+	display: inline-block;
+	width: 185px;
+	height: 185px;
+	background-color: #000000;
+	border-radius: 100px;
+	background-image: url(../../img/touxiang.png);
+	background-position: -38px -58px;
+}
+
+.ifo>div:first-child>div {
+	float: left;
+}
+
+.ifo>div:first-child>div:nth-child(2) {
+	width: 330px;
+	height: 150px;
+	margin-top: 55px;
+}
+
+.ifo>div:first-child>div:nth-child(2)>* {
+	width: 100px;
+	height: 30px;
+	margin-left: 50px;
+
+}
+
+.ifo>div:first-child>div:nth-child(3) {
+	width: 330px;
+	height: 150px;
+	margin-top: 55px;
+}
+
+.ifo>div:first-child>div:nth-child(3) li {
+	height: 30px;
+}
+
+.ifo>div:nth-child(2)>div {
+	display: inline-block;
+	width: 350px;
+	height: 100px;
+	padding: 30px;
+	position: relative;
+}
+
+.ifo>div:nth-child(2)>div>* {
+	display: inline-block;
+}
+
+.ifo>div:nth-child(2)>div>li {
+	font-size: 18px;
+	position: absolute;
+	left: 150px;
+	top: 60px;
+}
+
+.ifo>div:nth-child(2)>div>li>span {
+	color: red;
+}
+
+.ifo>div:nth-child(2)>div>li:last-child {
+	top: 85px;
+	font-size: 15px;
+}
+
+/* ***************************************订单*************************************************/
+.dingdan {
+	width: 978px;
+	background-color: white;
+	padding: 40px 0;
+}
+
+.ifo.title>span:first-child {
+	font-size: 30px;
+}
+
+.ifo.title>span:last-child {
+	font-size: 12px;
+	margin-left: 30px;
+}
+
+.ifo.title>div:nth-child(3) {
+	width: 880px;
+	height: 56px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.ifo.title>div:nth-child(3) li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+.ifo.title>div:nth-child(3) li:first-child~li {
+	border-left: 1px solid #9D9D9D;
+}
+
+.ifo.title>div:nth-child(3) input {
+	width: 200px;
+	height: 30px;
+	position: relative;
+	right: 20px;
+}
+
+.content {
+	font-size: 30px;
+	text-align: center;
+}
+
+.content td {
+	font-size: 15px;
+	width: 170px;
+	height: 30px;
+	color: #000000;
+	border: #CCCCCC 1px solid;
+}
+
+.content td img {
+	width: 150px;
+	height: 100px;
+}
+
+/* *******************************************************客服热线**************************************** */
+.kefurexian {
+	width: 100%;
+	height: 800px;
+	background-color: #F5F5F5;
+}
+
+.kefurexian>div:first-child {
+	width: 1226px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+}
+
+.kefurexian>div:first-child>* {
+	padding: 0 5px;
+}
+
+.kefurexian>div:nth-child(3) {
+	width: 1226px;
+	height: 730px;
+	margin: 0 auto;
+}
+
+.kefurexian>h1 {
+	font-size: 30px;
+	text-align: center;
+	color: #000000;
+	padding-top: 20px;
+}
+
+.kefurexian>div:nth-child(3) div {
+	float: left;
+}
+
+.kefurexian>div:nth-child(3) div>img {
+	width: 400px;
+	height: 275px;
+}
+
+.kefurexian>div:nth-child(3)>div:first-child>div:first-child~div {
+	margin-left: 11px;
+}
+
+.kefurexian>div:nth-child(3)>div:nth-child(2)>div:first-child~div {
+	margin-left: 11px;
+}
+
+.kefurexian>div:nth-child(3)>div {
+	margin-top: 15px;
+}
+
+.kefurexian>div:nth-child(3)>div:first-child {
+	margin-top: 60px;
+}
+
+.kefurexian>div:nth-child(3)>div>div:hover {
+	box-shadow: 0 0 4px 2px #E0E0E0;
+	position: relative;
+}
+
+/* *****************************************************************消息通知************************************************************************************************* */
+
+.xiaoxi {
+	padding: 10px 0;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #B0B0B0;
+}
+
+.xiaoxi>li {
+	border-right: 1px solid #CCCCCC;
+	font-size: 20px;
+	text-align: center;
+	width: 100px;
+	line-height: 30px;
+	display: inline-block;
+	height: 30px;
+}
+
+.anniu {
+	height: 650px;
+	width: 70px;
+	position: fixed;
+	right: 0;
+	bottom: 30px;
+}
+
+.anniu ul {
+	height: 100%;
+	width: 100%;
+}
+
+.anniu ul li {
+	width: 100%;
+	height: 80px;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	cursor: pointer;
+}
+
+.anniu ul li img {
+	height: 40px;
+	width: 40px;
+	margin-left: 15px;
+	margin-top: 10px;
+
+}
+
+.anniu ul li span {
+	display: block;
+	color: #808080;
+	font-size: 15px;
+	text-align: center;
+}
+
+.anniu ul li:last-child {
+	margin-top: 30px;
+}
+
+/* *******************************************************喜欢的商品********************************************************* */
+.like {
+	width: 740px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.xihuan>h1 {
+	font-size: 30px;
+	height: 80px;
+	line-height: 80px;
+	text-indent: 40px;
+}
+.xihuan>h1 button{
+	float: right;
+	margin-top: 20px;
+	font-size: 20px;
+	height: 30px;
+	background-color: orange;
+	color: white;
+	margin-right: 135px;
+	height: 40px;
+}
+
+.like>div {
+	display: inline-block;
+	margin-top: 30px;
+	width: 230px;
+	height: 260px;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+.like>div:hover {
+	box-shadow: 0 0 5px 5px #CCCCCC;
+}
+
+.like>div:first-child~div {
+	margin-left: 10px;
+}
+
+.like>div>span {
+	line-height: 60px;
+	font-size: 25px;
+	color: orange;
+}

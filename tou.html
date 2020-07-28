@@ -1,0 +1,492 @@
+<script src="../js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	.shang {
+		width: 100%;
+		height: 40px;
+		background-color: #333;
+	}
+
+	.shang>div {
+		width: 1226px;
+		height: 40px;
+		margin: 0 auto;
+	}
+
+	.shang>div>ul:first-child>li {
+		margin-top: 12px;
+		vertical-align: middle;
+		float: left;
+		padding: 0 10px;
+		border-left: 1px rgba(255, 255, 255, 0.1) solid;
+	}
+
+	.weidenglu {
+		display: none;
+	}
+
+	.zhongxin {
+		text-align: center;
+		height: 40px;
+		width: 80px;
+		position: relative;
+		float: right;
+		line-height: 40px;
+	}
+
+	.zhongxin li {
+		height: calc(140px / 6 - 1px);
+		line-height: calc(140px / 6);
+		text-align: center;
+		padding: 3px;
+	}
+
+	.zhongxin>div {
+		display: none;
+		z-index: 100;
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		width: 80px;
+		height: 180px;
+		background-color: white;
+		box-shadow: inset 0 -2px 2px 1px #E6E6E6;
+	}
+
+	.zhongxin~span {
+		float: right;
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+
+	}
+
+	.shang>div>ul:last-child li {
+		margin-top: 12px;
+		vertical-align: middle;
+		float: right;
+		padding: 0 15px;
+		border-left: 1px rgba(255, 255, 255, 0.1) solid;
+	}
+
+	.car {
+		float: right;
+		height: 40px;
+		width: 90px;
+		background-color: white;
+		opacity: 0.5;
+		text-align: center;
+		line-height: 40px;
+		position: relative;
+	}
+
+	.car>span {
+		color: orange;
+		font-size: 20px;
+	}
+
+	.car>div {
+		font-size: 17px;
+		display: none;
+		width: 250px;
+		height: 110px;
+		position: absolute;
+		top: 40px;
+		left: -160px;
+		background-color: white;
+		line-height: 50px;
+		color: #000000;
+		box-shadow: -2px 0 2px 0px gray;
+	}
+
+	.shang>div li:first-child {
+		border-left: none;
+	}
+
+	.zhong {
+		width: 100%;
+		height: 90px;
+	}
+
+	.zhong>div {
+		width: 1226px;
+		height: 90px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.zhong>div>ul {
+		display: inline-block;
+		margin-left: 50px;
+	}
+
+	.zhong img {
+		position: relative;
+		top: -10px;
+	}
+
+	.zhong>div li,
+	.zhong>div a {
+		padding: 0 8px;
+		height: 90px;
+		line-height: 90px;
+		float: left;
+		font-size: 16px;
+		color: #000000;
+	}
+
+	.zhong>div input {
+		height: 50px;
+		width: 300px;
+		float: right;
+		background: url(img/input_03.jpg) no-repeat right center;
+		margin-top: 15px;
+	}
+
+	.zhong>div li>a:hover {
+		color: red;
+	}
+
+	.xia {
+		background-color: white;
+		display: none;
+		width: 100%;
+		height: 220px;
+		border-top: 1px solid #e6e6e6;
+		position: absolute;
+		z-index: 100;
+	}
+
+	.xia>div {
+		width: 1226px;
+		height: 220px;
+		margin: 0 auto;
+	}
+
+	.show {
+		float: left;
+		width: calc(1226px / 6 - 2px);
+		height: 100%;
+		border-right: 1px;
+		border: #e6e6e6 1px solid;
+		border-top: none;
+	}
+
+	.picture {
+		overflow: hidden;
+		padding-top: 20px;
+		display: inline-block;
+		width: 200px;
+		height: 130px;
+	}
+
+	.picture>img {
+		width: 220px;
+		height: 130px;
+	}
+
+	.xia>div div>p {
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.app>div>img {
+		margin-top: 5px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.app>div {
+		display: none;
+		width: 110px;
+		height: 110px;
+		text-align: center;
+		position: absolute;
+		top: 50px;
+		background-color: white;
+	}
+
+	.all {
+		position: relative;
+		left: 50px;
+	}
+	.car div {}
+</style>
+<script type="text/javascript">
+	$(function() {
+		//登录
+		var zhanghao = JSON.parse(localStorage.getItem("username"));
+		
+		//判断登录状态
+		if (zhanghao == null) {
+			$(".weidenglu").show();
+			$(".yidenglu").hide();
+		} else {
+			$(".yidenglu").show();
+			$(".weidenglu").hide();
+		}
+		$(".zhongxin>span:eq(0)").text("欢迎  " + zhanghao);
+		//登录状态下
+		//退出登录 清空除zhanghaoku外的所有本地存储
+		$(".tuichu").click(function() {
+			localStorage.removeItem("dizhiku");
+			localStorage.removeItem("cangku");
+			localStorage.removeItem("like");
+			localStorage.removeItem("dingdanku");
+			localStorage.removeItem("username");
+			history.go(0);
+		});
+		//个人中心下拉
+		$(".zhongxin").hover(function() {
+			$(".zhongxin>div").stop().slideDown();
+			$(this).css("background", "white");
+		}, function() {
+			$(".zhongxin>div").stop().slideUp();
+			$(this).css("background", "");
+		});
+		var cangku = JSON.parse(localStorage.getItem("cangku"));
+		// console.log(cangku.length);
+		var sum = 0;
+		var zongjia = 0
+		//判断仓库是否有数据  再进行操作
+		if (cangku == null || cangku == 0) {
+			$(".car>span").text("0");
+			$(".car>div>span:eq(0)").text("您的仓库中有0件商品");
+			$(".car>div>span:eq(1)").text("您暂未购买商品");
+		} else {
+			for (var i = 0; i < cangku.length; i++) {
+				sum += parseInt(cangku[i].shuliang);
+				zongjia += parseInt(cangku[i].shuliang) * parseInt(cangku[i].jiage);
+			}
+
+			//购物车数量显示
+			$(".car>span").text(sum);
+			$(".car>div>span:eq(0)").text("您的仓库中有" + sum + "件商品");
+			$(".car>div>span:eq(1)").text("总价值" + zongjia + "元");
+		}
+
+		//购物车下拉显示
+		$(function() {
+			$(".car").hover(function() {
+				$(this).animate({
+					opacity: "1"
+				}, 100);
+				$(this).find("div").slideDown();
+			}, function() {
+				$(this).animate({
+					opacity: "0.2"
+				}, 100);
+				$(this).find("div").slideUp();
+			});
+			$(".xia").click(function() {
+				$(".xia").click(function(event) {
+					// console.log($(this));
+				});
+			});
+			// 下拉商品hover
+			$(".zhong li,.xia").hover(function() {
+				var $n = $(this).not(".xia").index();
+				switch ($n) {
+					case 0:
+						$.getJSON("../data/phone.json", function(shuju) {
+							for (var i = 0; i < shuju.shouji.length; i++) {
+								$(".picture:eq(" + i + ")").html("<img src='../img/" + shuju.shouji[i].jieshao + "' >");
+								$(".show:eq(" + i + ")>p:nth-child(2)").html(shuju.shouji[i].name);
+								$(".show:eq(" + i + ")>p:nth-child(3)").html(shuju.shouji[i].piace);
+							}
+						});
+						break;
+					case 1:
+						$.getJSON("../data/phone.json", function(shuju) {
+							for (var i = 0; i < shuju.hongmi.length; i++) {
+								$(".picture:eq(" + i + ")").html(shuju.hongmi[i].jieshao);
+								$(".show:eq(" + i + ")>p:nth-child(2)").html(shuju.hongmi[i].name);
+								$(".show:eq(" + i + ")>p:nth-child(3)").html(shuju.hongmi[i].piace);
+							}
+						});
+						break;
+					case 2:
+						$.getJSON("../data/phone.json", function(shuju) {
+							for (var i = 0; i < shuju.diannao.length; i++) {
+								$(".picture:eq(" + i + ")").html(shuju.diannao[i].jieshao);
+								$(".show:eq(" + i + ")>p:nth-child(2)").html(shuju.diannao[i].name);
+								$(".show:eq(" + i + ")>p:nth-child(3)").html(shuju.diannao[i].piace);
+							}
+						});
+						break;
+					case 3:
+						$.getJSON("../data/phone.json", function(shuju) {
+							for (var i = 0; i < shuju.jiadian.length; i++) {
+								$(".picture:eq(" + i + ")").html(shuju.jiadian[i].jieshao);
+								$(".show:eq(" + i + ")>p:nth-child(2)").html(shuju.jiadian[i].name);
+								$(".show:eq(" + i + ")>p:nth-child(3)").html(shuju.jiadian[i].piace);
+							}
+						});
+						break;
+					case 4:
+						$.getJSON("../data/phone.json", function(shuju) {
+							for (var i = 0; i < shuju.luyouqi.length; i++) {
+								$(".picture:eq(" + i + ")").html(shuju.luyouqi[i].jieshao);
+								$(".show:eq(" + i + ")>p:nth-child(2)").html(shuju.luyouqi[i].name);
+								$(".show:eq(" + i + ")>p:nth-child(3)").html(shuju.luyouqi[i].piace);
+							}
+						});
+						break;
+					case 5:
+						$.getJSON("../data/phone.json", function(shuju) {
+							for (var i = 0; i < shuju.yingjian.length; i++) {
+								$(".picture:eq(" + i + ")").html(shuju.yingjian[i].jieshao);
+								console.log(shuju.yingjian[1].name);
+								$(".show:eq(" + i + ")>p:nth-child(2)").html(shuju.yingjian[i].name);
+								$(".show:eq(" + i + ")>p:nth-child(3)").html(shuju.yingjian[i].piace);
+							}
+						});
+						break;
+				}
+
+				$(".xia").stop().slideDown().css("box-shadow", " 2px 2px 4px 4px #e6e6e6");
+			}, function() {
+				$(".xia").stop().slideUp();
+			});
+
+		});
+
+		//app二维码显示
+		$(".app").hover(function() {
+			$(this).find("div").stop().slideDown();
+		}, function() {
+			$(this).find("div").stop().slideUp();
+		});
+	});
+</script>
+<div class="shang">
+	<div>
+		<ul>
+			<li><a href="#">小米商城</a></li>
+			<li><a href="#">MIUI</a></li>
+			<li><a href="#">loT</a></li>
+			<li><a href="#">云服务</a></li>
+			<li><a href="#">金融</a></li>
+			<li><a href="#">有品</a></li>
+			<li><a href="#">小爱开放平台</a></li>
+			<li><a href="#">企业团购</a></li>
+			<li><a href="#">资质证照</a></li>
+			<li><a href="#">协议规则</a></li>
+			<li class="app"><a href="#">下载app</a>
+				<div>
+					<img src="../img/erweima_03.png">
+				</div>
+			</li>
+			<li><a href="">Select Location</a></li>
+		</ul>
+		<ul>
+
+			<a href="../gouwuche/cars.html">
+				<div class="car">
+					购物车<span></span>
+					<div>
+						<span></span>
+						<br>
+						<span></span>
+					</div>
+				</div>
+			</a>
+			<div class="weidenglu">
+
+				<li><a href="../zhuye/denglu.html">登录</a></li>
+				<li><a href="../zhuye/zhuce.html">注册</a></li>
+
+			</div>
+			<div class="yidenglu">
+				<span class="zhongxin"><span></span>
+					<div>
+						<li><a href="../person/person.html">我的中心</a></li>
+						<a href="">
+							<li>晒单评价</li>
+						</a>
+						<li><a href="#">小米账号</a></li>
+						<li><a href="../person/like.html">消息通知</a></li>
+						<li class="tuichu"><a href="#">退出登录</a></li>
+					</div>
+				</span>
+				<span><a href="../person/dingdan.html">我的订单</a></span>
+				<span><a href="../person/like.html">我的喜欢</a></span>
+			</div>
+		</ul>
+	</div>
+</div>
+<div class="zhong">
+	<div>
+		<a href="../zhuye/index.html"><img src="img/logo.jpg"></a>
+		<a href="../fuwulan/ALLGoods.html" class="all">所有商品</a>
+		<ul>
+			<li><a href="javascript:void(0)">小米手机</a></li>
+			<li><a href="javascript:void(0)">Redmi红米</a></li>
+			<li><a href="javascript:void(0)">笔记本</a></li>
+			<li><a href="javascript:void(0)">家电</a></li>
+			<li><a href="javascript:void(0)">路由器</a></li>
+			<li><a href="javascript:void(0)">智能硬件</a></li>
+			<a href="javascript:void(0)">服务</a>
+			<a href="javascript:void(0)">社区</a>
+		</ul>
+		<input type="text" name="" id="" value="" />
+	</div>
+</div>
+<div class="xia">
+	<div>
+		<a href="../gouwuche/shangpin1.html">
+			<div class="show">
+				<div class="picture">
+
+				</div>
+				<p></p>
+				<p></p>
+			</div>
+		</a>
+		<a href="../gouwuche/shangpin1.html">
+			<div class="show">
+				<div class="picture">
+
+				</div>
+				<p></p>
+				<p></p>
+			</div>
+		</a>
+		<a href="../gouwuche/shangpin1.html">
+			<div class="show">
+				<div class="picture">
+
+				</div>
+				<p></p>
+				<p></p>
+			</div>
+		</a>
+		<a href="../gouwuche/shangpin1.html">
+			<div class="show">
+				<div class="picture">
+
+				</div>
+				<p></p>
+				<p></p>
+			</div>
+		</a>
+		<a href="../gouwuche/shangpin1.html">
+			<div class="show">
+				<div class="picture">
+
+				</div>
+				<p></p>
+				<p></p>
+			</div>
+		</a>
+		<a href="javascript:void(0);">
+			<div class="show">
+				<div class="picture">
+
+				</div>
+				<p></p>
+				<p></p>
+			</div>
+		</a>
+	</div>
+</div>

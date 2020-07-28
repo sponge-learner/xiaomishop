@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城-个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/person.css" />
+		<script src="../js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<script type="text/javascript">
+			$(function() {
+				$(".head").load("../tou.html");
+				$(".fot").load("../fot.html");
+				var zhanghao = localStorage.getItem("username");
+				$(".user").text(zhanghao);
+				//获取dizhiku
+
+				var dingdan = JSON.parse(localStorage.getItem("dingdanku"));
+				if (dingdan !== null) {
+					$(".daishou").text(dingdan.length);
+				}
+
+				//获取cangku********为实现
+				var cangku = JSON.parse(localStorage.getItem("cangku"));
+
+				if (cangku !== null) {
+					$(".zhifu").text(cangku.length);
+				}
+
+				//获取like
+				var like = JSON.parse(localStorage.getItem("like"));
+				if (like !== null) {
+					$(".like").text(like.length);
+				}
+				console.log(like);
+
+
+				// 回到顶部
+				$(".anniu ul li:last-child").click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, );
+				});
+				// 隐藏回到顶部按钮
+				$(window).scroll(function() {
+					if ($(document).scrollTop() < 350) {
+						$(".anniu ul li:last-child").stop().fadeOut(500);
+					} else {
+						$(".anniu ul li:last-child").stop().fadeIn(500);
+					};
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="head">
+		</div>
+		<div class="mid">
+			<div>
+				<div>
+					首页/<span>个人中心</span>
+				</div>
+				<div class="fl">
+					<ul>
+						<li><a href="dingdan.html">订单中心</a></li>
+						<li><a href="dingdan.html">我的订单</a></li>
+						<li><a href="dingdan.html">评价晒单</a></li>
+						<li><a href="dingdan.html">话费充值订单</a></li>
+						<li><a href="dingdan.html">以旧换新订单</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="person.html">我的个人中心</a></li>
+						<li><a href="xiaoxi.html">消息通知</a></li>
+						<li><a href="#">购买资格</a></li>
+						<li><a href="#">现金账户</a></li>
+						<li><a href="#">小米礼品卡</a></li>
+						<li><a href="#">现金券</a></li>
+						<li><a href="like.html">喜欢的商品</a></li>
+						<li><a href="#">优惠券</a></li>
+						<li><a href="#">收货地址</a></li>
+						<li><a href="#">红包</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">售后服务</a></li>
+						<li><a href="#">服务记录</a></li>
+						<li><a href="#">申请服务</a></li>
+						<li><a href="#">领取快递报销</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">账户管理</a></li>
+						<li><a href="#">个人信息</a></li>
+						<li><a href="#">修改密码</a></li>
+					</ul>
+				</div>
+				<div class="fr">
+					<div class="ifo">
+						<div>
+							<div>
+								<img src="">
+							</div>
+							<div>
+								<div>
+									<h2 class="user">暂未登录</h2>
+								</div>
+								<div>下午好</div>
+								<a href="">
+									<font size="" color="orange">修改个人信息</font>
+								</a>
+							</div>
+							<div>
+								<li>账户安全：<span>未知</span></li>
+								<li>绑定手机：<span>未知</span></li>
+								<li>绑定邮箱：<span>未知</span></li>
+							</div>
+						</div>
+						<div>
+							<div>
+								<img src="img/tag_red.png" width="100px" height="100px">
+								<li>待支付商品数：<span class="zhifu">0</span></li>
+								<li><a href="../gouwuche/cars.html">查看待支付订单</a></li>
+							</div>
+							<div>
+								<img src="img/tag_car.png" width="100px" height="100px">
+								<li>待收货的订单：<span class="daishou">0</span></li>
+								<li><a href="dingdan.html">查看待收货的订单</a></li>
+							</div>
+							<div>
+								<img src="img/tag_xin.png" width="100px" height="100px">
+								<li>喜欢的商品：<span class="like">0</span></li>
+								<li><a href="like.html">查看喜欢的商品</a></li>
+							</div>
+							<div>
+								<img src="img/tab_blue.png" width="100px" height="100px">
+								<li>待评价商品数：<span>0</span></li>
+								<li><a href="">查看待评价商品</a></li>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="anniu">
+			<ul>
+				<li>
+					<img src="../zhuye/img/74c4fcb4475af8308e9a670db9c01fdf.png">
+					<span>手机APP</span>
+				</li>
+				<li><a href="../person/person.html">
+						<img src="../zhuye/img/41f858550f42eb1770b97faf219ae215.png">
+						<span>个人中心</span></a>
+				</li>
+				<li>
+					<a href="../person/kefudianhua.html"><img src="../zhuye/img/95fbf0081a06eec7be4d35e277faeca0.png">
+						<span>售后服务</span></a>
+				</li>
+				<li>
+					<img src="../zhuye/img/5e9f2b1b0da09ac3b3961378284ef2d4.png">
+					<span>人工客服</span>
+				</li>
+				<li>
+					<a href="../gouwuche/cars.html"><img src="../zhuye/img/692a6c3b0a93a24f74a29c0f9d68ec71.png">
+						<span>购物车</span></a>
+				</li>
+				<li>
+					<img src="../zhuye/img/totop_hover.png">
+					<span>回顶部</span>
+				</li>
+			</ul>
+		</div>
+		<div class="fot">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,242 @@
+.top {
+	width: 100%;
+	height: 102px;
+	background-color: white;
+	border-bottom: 2px solid orange;
+}
+
+.top>div {
+	width: 1226px;
+	height: 74px;
+	margin: 0 auto;
+}
+
+.top>div img {
+	width: 48px;
+	height: 48px;
+	padding-top: 24px;
+}
+
+.top>div>h5 {
+	position: relative;
+	display: inline-block;
+	margin-left: 30px;
+	bottom: 10px;
+}
+
+.top>div>h1 {
+	position: relative;
+	display: inline-block;
+	margin-left: 50px;
+	color: #000000;
+	font-size: 30px;
+	bottom: 10px;
+}
+
+.top>div span {
+	padding: 0 5px;
+	position: relative;
+	bottom: -50px;
+	font-size: 15px;
+}
+
+.top>div>a:nth-child(4)>span {
+	border-left: 1px solid #9D9D9D;
+}
+
+.mid {
+	padding-bottom: 50px;
+	width: 100%;
+	background-color: #F5F5F5;
+	padding-top: 50px;
+}
+
+.mid>div {
+	width: 1226px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.dizhi {
+	
+	overflow: hidden;
+	width: 1178px;
+	height: 185px;
+	margin: 20px auto;
+}
+
+.dizhi>span:first-child {
+	display: block;
+	color: #000000;
+	font-size: 20px;
+}
+
+.dizhi>div {
+	text-indent: 30px;
+	position: relative;
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.mid>div:first-child>h1{
+	text-indent: 25px;
+	padding-top: 10px;
+	color: #000000;
+}
+.dizhi>div>button{
+	background-color: orange;
+	color: white;
+	width: 100px;
+	height: 30px;
+	margin-left: 80px;
+}
+.jiesuan{
+	background-color: orange;
+	color: white;
+	width: 100px;
+	height: 30px;
+}
+.dizhi>div>button:hover{
+	background-color: #898989;
+}
+.dizhi>div:hover{
+	box-shadow: 0 0 6px 4px #CCCCCC;
+}
+
+.adddizhi {
+	width: 270px;
+	height: 180px;
+	line-height: 53px;
+	text-align: center !important;
+	border: 1px solid #9D9D9D;
+	text-indent: 0 !important;
+}
+
+.adddizhi~div {
+	font-size: 14px;
+	color: #000000;
+	width: 270px;
+	height: 180px;
+	border: 1px solid #9D9D9D;
+}
+
+
+.dizhi div>img {
+	padding-top: 50px;
+}
+
+.shangpin {
+	padding-top: 15px;
+	width: 1178px;
+	margin: 0 auto;
+	color: #000000;
+	font-size: 20px;
+	border-bottom: 1px solid #9D9D9D;
+}
+
+.shangpin>table tr:first-child {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+
+.shangpin>table tr:first-child~tr {
+	font-size: 15px;
+
+}
+
+.shangpin>table tr:first-child~tr>td:first-child {
+	width: 650px;
+	height: 30px;
+	line-height: 30px;
+	padding: 10px 0;
+}
+
+.shangpin>table tr:first-child~tr>td:nth-child(2) {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.shangpin>table tr:first-child~tr>td:nth-child(3) {
+	width: 190px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: orange;
+}
+
+.jiezhang {
+	width: 1226px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.jiezhang button {
+	margin-top: 55px;
+	float: right;
+	width: 150px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+.jiezhang>span {
+	position: relative;
+	left: 1060px;
+	top: 10px;
+
+}
+
+.jiezhang>span>span {
+	color: orange;
+	font-size: 25px;
+}
+
+.jiezhang>a:nth-child(2) button {
+	color: white;
+	background-color: orange;
+	border: 1px solid orange;
+}
+
+.zengjiadizhi {
+	display: none;
+	position: absolute;
+	z-index:200;
+	width: 100%;
+	height: calc(100% + 520px);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.zengjiadizhi>div {
+	text-align: center;
+	margin: 200px auto;
+	background-color: pink;
+	width: 600px;
+	height: 400px;
+	font-size: 25px;
+	color: black;
+	background-color: white;
+	border: 1px solid #9D9D9D;
+	position: relative;
+	z-index: 200;
+}
+
+.zengjiadizhi>div>input {
+	margin: 20px 0;
+	width: 300px;
+	height: 50px;
+}
+.zengjiadizhi>div>button{
+	margin:  0 auto;
+	width:200px;
+	height: 50px;
+	text-align: center;
+	display: block;
+	background-color: orange;
+	color: white;
+	border: 0px;
+}
+.adddizhi:hover{
+	cursor:pointer;
+}
